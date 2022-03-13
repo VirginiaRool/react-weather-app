@@ -1,38 +1,126 @@
-.App {
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  color: #362a67;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
+.app-container {
+  margin: 10px;
+  max-width: 550px;
+  border-radius: 10px;
+  padding: 15px;
+  /*background-image: url("/assets/background.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 555px;
+}
+
+#button-search {
+  color: white;
+  background: #362a67;
+  border: 1px solid #362a67;
+}
+
+#button-search:hover {
+  background-color: #625692;
+  border: 1px solid #625692;
+}
+
+.lastUpdated {
+  padding-bottom: 40px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.showMaxTemp {
+  padding-top: 40px;
+}
+
+.city-name {
+  font-size: 25px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+
+.current-temp {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.temp-description {
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.actualData {
+  text-align: right;
+  font-weight: 800;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.repository {
+  font-size: 12px;
   text-align: center;
+  margin: 10px;
+  max-width: 550px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tempUnits {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #362a67;
+  padding-top: 12px;
+  padding-left: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.tempUnits a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.actualData .active {
+  cursor: default;
+  color: #362a67;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.actualData .active:hover {
+  color: #362a67;
+  text-decoration: none;
+}
+
+.weather-forecast {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.weather-forecast-date,
+.forecast-temperature-min {
+  opacity: 0.7;
+}
+
+.weather-image {
+  width: 100%;
+  max-height: 185px;
+  padding-top: 15px;
 }
