@@ -37,8 +37,7 @@ li::first-letter {
 
 .lastUpdated {
   padding-bottom: 40px;
-  padding-top: 20px;
-  font-weight: bold;
+  padding-top: 40px;
 }
 
 .showMaxTemp {
@@ -49,11 +48,6 @@ li::first-letter {
   font-size: 25px;
   font-weight: 800;
   padding-bottom: 15px;
-}
-
-.current-temp {
-  font-size: 40px;
-  font-weight: 800;
 }
 
 .temp-description {
@@ -73,30 +67,6 @@ li::first-letter {
   text-align: center;
   margin: 10px;
   max-width: 550px;
-}
-
-.tempUnits {
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #362a67;
-  padding-top: 12px;
-  padding-left: 12px;
-}
-
-.tempUnits a {
-  text-decoration: none;
-  color: white;
-}
-
-.tempUnits .active {
-  cursor: default;
-  color: #362a67;
-}
-
-.tempUnits .active:hover {
-  color: #362a67;
-  text-decoration: none;
 }
 
 .weather-forecast {

@@ -19,13 +19,13 @@ export default function WeatherDetails(props) {
   return (
     <div className="weather-container">
       <div className="app-container">
+        <div>
+          <ActualDate date={date} />
+        </div>
         <div className="row">
           <div className="col-6">
             <div className="date">
               <ul>
-                <li className="lastUpdated">
-                  <ActualDate date={date} />
-                </li>
                 <li className="city-name">{city}</li>
                 <li>
                   <Temperature temperature={temperature} />

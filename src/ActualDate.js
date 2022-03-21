@@ -9,5 +9,9 @@ export default function ActualDate(props) {
     day: "numeric",
   };
 
-  return <div>{date.toLocaleDateString(undefined, options)}</div>;
+  return (
+    <div className="lastUpdated">
+      {date.toLocaleDateString(undefined, options)}
+    </div>
+  );
 }

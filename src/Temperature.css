@@ -1,0 +1,27 @@
+.current-temp {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.tempUnits {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #362a67;
+  padding-top: 12px;
+}
+
+.tempUnits a {
+  text-decoration: none;
+  color: #9a73ae;
+}
+
+.tempUnits .active {
+  cursor: default;
+  color: #362a67;
+}
+
+.tempUnits .active:hover {
+  color: #362a67;
+  text-decoration: none;
+}
