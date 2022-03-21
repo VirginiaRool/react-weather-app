@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import WeatherDetails from "./WeatherDetails";
 import "./WeatherSearch.css";
 import background from "./images/background.jpg";
-
 import axios from "axios";
 
 export default function WeatherSearch() {
