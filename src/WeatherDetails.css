@@ -1,0 +1,120 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
+.weather-container {
+  margin: 10px;
+  max-width: 550px;
+  border-radius: 10px;
+  padding: 15px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  
+}
+
+.button-search {
+  color: white;
+  background: #362a67;
+  border: 1px solid #362a67;
+}
+
+.button-search:hover {
+  background-color: #625692;
+  border: 1px solid #625692;
+}
+
+.lastUpdated {
+  padding-bottom: 40px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.showMaxTemp {
+  padding-top: 40px;
+}
+
+.city-name {
+  font-size: 25px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+
+.current-temp {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.temp-description {
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.actualData {
+  text-align: right;
+  font-weight: 800;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.repository {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px;
+  max-width: 550px;
+}
+
+.tempUnits {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #362a67;
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+.tempUnits a {
+  text-decoration: none;
+  color: white;
+}
+
+.actualData .active {
+  cursor: default;
+  color: #362a67;
+}
+
+.actualData .active:hover {
+  color: #362a67;
+  text-decoration: none;
+}
+
+.weather-forecast {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.weather-forecast-date,
+.forecast-temperature-min {
+  opacity: 0.7;
+}
+
+.weather-image {
+  width: 50%;
+  max-height: 150px;
+  padding-top: 15px;
+}
