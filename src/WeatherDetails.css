@@ -22,7 +22,6 @@ li::first-letter {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  
 }
 
 .button-search {
@@ -90,12 +89,12 @@ li::first-letter {
   color: white;
 }
 
-.actualData .active {
+.tempUnits .active {
   cursor: default;
   color: #362a67;
 }
 
-.actualData .active:hover {
+.tempUnits .active:hover {
   color: #362a67;
   text-decoration: none;
 }
