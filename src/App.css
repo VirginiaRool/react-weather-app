@@ -1,5 +1,10 @@
 body {
   font-family: "Mulish", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   color: #362a67;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }

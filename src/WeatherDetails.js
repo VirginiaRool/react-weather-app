@@ -46,10 +46,10 @@ export default function WeatherDetails(props) {
         </div>
         <div>
           <ul className="forecastDescription">
-            <li className="actualHumidity">Humidity: {humidity} %</li>
-            <li className="actualWind">Wind: {wind} km/hr</li>
-            <li className="showMaxTemp">Max: 25 °</li>
-            <li className="showMinTemp">Min: 14 °</li>
+            <li>Humidity: {humidity} %</li>
+            <li>Wind: {wind} km/hr</li>
+            <li>Max: 25 °</li>
+            <li>Min: 14 °</li>
           </ul>
         </div>
       </div>

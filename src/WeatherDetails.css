@@ -1,8 +1,3 @@
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 li {
   list-style: none;
   margin: 0;
@@ -14,7 +9,6 @@ li::first-letter {
 }
 
 .weather-container {
-  margin: 10px;
   max-width: 550px;
   border-radius: 10px;
   padding: 15px;
@@ -24,33 +18,18 @@ li::first-letter {
   background-position: center bottom;
 }
 
-.button-search {
-  color: white;
-  background: #362a67;
-  border: 1px solid #362a67;
-}
-
-.button-search:hover {
-  background-color: #625692;
-  border: 1px solid #625692;
-}
-
 .lastUpdated {
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-.showMaxTemp {
-  padding-top: 40px;
+  padding-bottom: 28px;
+  padding-top: 0px;
 }
 
 .city-name {
   font-size: 25px;
   font-weight: 800;
-  padding-bottom: 15px;
 }
 
 .temp-description {
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1.5px;
 }
@@ -60,6 +39,11 @@ li::first-letter {
   font-weight: 800;
   font-weight: bold;
   font-size: 20px;
+}
+
+.forecastDescription {
+  margin-top: 20px;
+  font-weight: 400px;
 }
 
 .repository {
