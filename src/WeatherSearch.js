@@ -34,22 +34,28 @@ export default function WeatherSearch() {
         className="weather-search"
         style={{ backgroundImage: `url(${background})` }}
       >
-        <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-9">
-              <input
-                type="search"
-                placeholder="Enter a city"
-                className="form-control"
-                autoFocus="on"
-                onChange={updateCity}
-              />
-            </div>
-            <div className="col-3">
-              <input type="submit" value="Search" />
-            </div>
+        <form className="search-city" onSubmit={handleSubmit}>
+          <div className="input-group input-group-sm mb-3">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Type a city"
+              aria-label="Recipient's username"
+              aria-describedby="button-search"
+              autoFocus="on"
+              autoComplete=""
+              onChange={updateCity}
+            />
+            <button
+              className="btn button-search"
+              type="submit"
+              id="button-search"
+            >
+              Search
+            </button>
           </div>
         </form>
+        
         <WeatherDetails data={data} />
       </div>
       <p className="repository">
