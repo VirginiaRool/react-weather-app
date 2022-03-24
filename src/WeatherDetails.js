@@ -12,6 +12,8 @@ export default function WeatherDetails(props) {
   let icon = props.data.weather[0].icon;
   let description = props.data.weather[0].description;
   let temperature = Math.round(props.data.main.temp);
+  let tempMax = Math.round(props.data.main.temp_max);
+  let tempMin = Math.round(props.data.main.temp_min);
   let humidity = props.data.main.humidity;
   let wind = props.data.wind.speed;
   let date = new Date(props.data.dt * 1000);
@@ -27,11 +29,10 @@ export default function WeatherDetails(props) {
             <div className="date">
               <ul>
                 <li className="city-name">{city}</li>
+                <li className="temp-description">{description}</li>
                 <li>
                   <Temperature temperature={temperature} />
                 </li>
-                <li className="temp-description">{description}</li>
-                <li id="temperature" className="d-flex align-items-start"></li>
               </ul>
             </div>
           </div>
@@ -48,8 +49,8 @@ export default function WeatherDetails(props) {
           <ul className="forecastDescription">
             <li>Humidity: {humidity} %</li>
             <li>Wind: {wind} km/hr</li>
-            <li>Max: 25 °</li>
-            <li>Min: 14 °</li>
+            <li>Max: {tempMax} °</li>
+            <li>Min: {tempMin} °</li>
           </ul>
         </div>
       </div>
