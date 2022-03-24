@@ -25,13 +25,12 @@ li::first-letter {
 }
 
 .city-name {
-  font-size: 25px;
+  font-size: 34px;
   font-weight: 800;
 }
 
 .temp-description {
   font-size: 20px;
-  font-weight: 600;
   letter-spacing: 1.5px;
 }
 
@@ -44,7 +43,6 @@ li::first-letter {
 
 .forecastDescription {
   margin-top: 20px;
-  font-weight: 400px;
 }
 
 .repository {
