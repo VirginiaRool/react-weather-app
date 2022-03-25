@@ -3,6 +3,7 @@ import WeatherDetails from "./WeatherDetails";
 import "./WeatherSearch.css";
 import background from "./images/background.jpg";
 import axios from "axios";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function WeatherSearch() {
   let apiKey = "78af43c4b86f6fe747e2eeb5803e94cd";
@@ -55,7 +56,7 @@ export default function WeatherSearch() {
             </button>
           </div>
         </form>
-        
+
         <WeatherDetails data={data} />
       </div>
       <p className="repository">
