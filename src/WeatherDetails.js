@@ -1,6 +1,7 @@
 import React from "react";
 import "./WeatherDetails.css";
 import Temperature from "./Temperature";
+import WeatherForecast from "./WeatherForecast";
 import "bootstrap/dist/css/bootstrap.css";
 import ActualDate from "./ActualDate";
 
@@ -47,13 +48,14 @@ export default function WeatherDetails(props) {
         </div>
         <div>
           <ul className="forecastDescription">
-            <li>Humidity: {humidity} %</li>
-            <li>Wind: {wind} km/hr</li>
             <li>Max: {tempMax} °</li>
             <li>Min: {tempMin} °</li>
+            <li>Humidity: {humidity} %</li>
+            <li>Wind: {wind} km/hr</li>
           </ul>
         </div>
       </div>
+      <WeatherForecast />
     </div>
   );
 }
