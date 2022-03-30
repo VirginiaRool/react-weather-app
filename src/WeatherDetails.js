@@ -4,6 +4,8 @@ import Temperature from "./Temperature";
 import WeatherForecast from "./WeatherForecast";
 import "bootstrap/dist/css/bootstrap.css";
 import ActualDate from "./ActualDate";
+import WeatherIcon from "./WeatherIcon";
+immport WeatherIcon from "./WeatherIcon";
 
 export default function WeatherDetails(props) {
   if (props.data === undefined) {
@@ -39,6 +41,7 @@ export default function WeatherDetails(props) {
           </div>
 
           <div className="col-6">
+            <WeatherIcon code={props.data.icon}/>
             <img
               className="weather-image"
               src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
