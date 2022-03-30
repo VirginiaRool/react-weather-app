@@ -10,7 +10,7 @@ export default function WeatherDetails(props) {
     return null;
   }
   let city = props.data.name;
-  let iconUrl = `https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
+  let icon = props.data.weather[0].icon;
   let description = props.data.weather[0].description;
   let temperature = Math.round(props.data.main.temp);
   let tempMax = Math.round(props.data.main.temp_max);
@@ -40,7 +40,11 @@ export default function WeatherDetails(props) {
 
           <div className="col-6">
             <WeatherIcon code={props.data.icon} />
-            <img className="weather-image" src={iconUrl} alt="weahter icon" />
+            <img
+              className="weather-image"
+              src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
+              alt="icon"
+            />
           </div>
         </div>
         <div>
