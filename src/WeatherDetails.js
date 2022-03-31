@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
+
 import Temperature from "./Temperature";
 import WeatherForecast from "./WeatherForecast";
 import ActualDate from "./ActualDate";
@@ -18,6 +19,7 @@ export default function WeatherDetails(props) {
   let humidity = props.data.main.humidity;
   let wind = props.data.wind.speed;
   let date = new Date(props.data.dt * 1000);
+  let coordinates = props.data.coord;
 
   return (
     <div className="weather-container">
@@ -56,7 +58,7 @@ export default function WeatherDetails(props) {
           </ul>
         </div>
       </div>
-      <WeatherForecast />
+      <WeatherForecast coordinates={WeatherDetails.coordinates} />
     </div>
   );
 }
