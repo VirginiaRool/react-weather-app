@@ -32,9 +32,9 @@ export default function WeatherIcon(props) {
     "13n": snow,
     "50d": mist,
     "50n": mist,
-    "731":mist2,
-    "741":mist2,
-    "761":mist2,
+    731: mist2,
+    741: mist2,
+    761: mist2,
   };
 
   return <WeatherDetails icon={codeMapping[props.code]} />;

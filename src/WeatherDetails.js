@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
+import "./WeatherDetails.css";
 
 import Temperature from "./Temperature";
 import WeatherForecast from "./WeatherForecast";
@@ -41,7 +41,7 @@ export default function WeatherDetails(props) {
           </div>
 
           <div className="col-6">
-            <WeatherIcon code={props.data.icon} />
+            <WeatherIcon code={icon} />
             <img
               className="weather-image"
               src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
@@ -58,7 +58,7 @@ export default function WeatherDetails(props) {
           </ul>
         </div>
       </div>
-      <WeatherForecast coordinates={WeatherDetails.coordinates} />
+      <WeatherForecast coordinates={coordinates} />
     </div>
   );
 }
